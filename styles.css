@@ -6,22 +6,51 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    
+    background: rgb(0,17,36);   
+    background: linear-gradient(137deg, rgba(0,17,36,1) 0%, rgba(42,18,54,0.9192051820728291) 47%, rgba(11,31,40,1) 100%);
 }
 
 .container {
     text-align: center;
 }
 
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  #countdown {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.countdown-item {
+    margin: 0 5px;
+    text-align: center;
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.countdown-item .label {
+    font-size: 50px;
+}
 
 footer {
-    background-color: #f4f4f4;
+    border-top: 1px solid;
     text-align: center;
     padding: 20px;
-    color: black;
+    color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
     font-size: large;
     font-weight: medium;
+    background: transparent;
 }

@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: rgb(152, 49, 56);">
-    <div class="container text-center">
+    <div class="container text-center mt-5">
         <p id="countdownLabel" style="font-size: 18px; color: white;">Sabar yaa, kalian bakal tau isi nya setelah waktu ini berakhir</p>
         <p id="countdown" style="font-size: 24px; color: white;"></p>
-        <div class="d-flex justify-content-center align-items-center">
-            <button id="clickButton" class="btn btn-light text-danger d-none" >Sini Masuk!!!</button>
+        <div class="d-flex justify-content-center mt-3">
+            <button id="clickButton" class="btn btn-light text-danger" style="display: none;">Sini Masuk!!!</button>
         </div>
     </div>
 
@@ -22,23 +22,22 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Masukkan PIN</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <p>Kalo mau buka ini, harus tebak tanggal masuk internya gw <br>
-                    format pengisian contoh : 20122024</p>
-                    <input type="password" id="pinInput" class="form-control mb-3 w-100" placeholder="Masukin PIN nya">
+                    <p>Kalo mau buka ini, harus tebak tanggal masuk internya gw <br> format pengisian contoh : 20122024</p>
+                    <input type="password" id="pinInput" class="form-control mb-3" placeholder="Masukin PIN nya">
                     <button type="button" id="submitPin" class="btn btn-primary w-100">Klik ini</button>
                 </div>
             </div>
         </div>
     </div>
-    
 
     <script src="script.js"></script>
 </body>
 
-<footer>
+<footer class="text-center mt-4">
    Copyright &copy; 2024 Fahri
 </footer>
 </html>

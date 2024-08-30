@@ -18,33 +18,28 @@ body {
     font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+  }
+  
 
-#countdownLabel {
-    font-size: 4vw;
-    color: white;
-}
-
-#countdown {
+  #countdown {
     display: flex;
     justify-content: center;
     color: white;
-    flex-wrap: wrap;
 }
 
 .countdown-item {
-    margin: 0 1vw;
+    margin: 0 5px;
     text-align: center;
 }
 
 .countdown-item span {
     display: block;
-    font-size: 10vw;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .countdown-item .label {
-    font-size: 4vw;
+    font-size: 40px;
 }
 
 footer {
@@ -58,28 +53,4 @@ footer {
     font-size: large;
     font-weight: medium;
     background: transparent;
-}
-
-@media (max-width: 768px) {
-    #countdownLabel {
-        font-size: 6vw;
-    }
-    .countdown-item span {
-        font-size: 12vw;
-    }
-    .countdown-item .label {
-        font-size: 5vw;
-    }
-}
-
-@media (max-width: 480px) {
-    #countdownLabel {
-        font-size: 8vw;
-    }
-    .countdown-item span {
-        font-size: 15vw;
-    }
-    .countdown-item .label {
-        font-size: 6vw;
-    }
 }

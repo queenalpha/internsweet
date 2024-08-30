@@ -6,38 +6,31 @@ document.addEventListener('DOMContentLoaded', function() {
     var submitPin = document.getElementById('submitPin');
     var myModal = new bootstrap.Modal(document.getElementById('myModal'));
 
-    var endDate = new Date('2024-09-03T23:59:59'); // Tanggal akhir hitung mundur
-    var now = new Date().getTime();
-    var endTime = localStorage.getItem('countdownEndTime');
-
-    if (!endTime) {
-        // Jika tidak ada waktu akhir yang tersimpan, set waktu akhir dengan tanggal yang ditentukan
-        endTime = endDate.getTime();
-        localStorage.setItem('countdownEndTime', endTime);
-    }
+    var endDate = new Date('2024-09-03T12:00:00'); 
 
     function updateCountdown() {
         var currentTime = new Date().getTime();
+        var endTime = endDate.getTime();
         var timeLeft = endTime - currentTime;
 
         if (timeLeft <= 0) {
             clearInterval(countdownTimer);
             countdownElement.style.display = 'none';
             countdownLabel.style.display = 'none';
-            clickButton.style.display = 'block'; // Tampilkan tombol "Sini Masuk!!!" setelah hitung mundur selesai
+            clickButton.classList.remove('d-none'); 
         } else {
             var days = Math.floor(timeLeft / (24 * 60 * 60 * 1000));
             var hours = Math.floor((timeLeft % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
             var minutes = Math.floor((timeLeft % (60 * 60 * 1000)) / (60 * 1000));
             var seconds = Math.floor((timeLeft % (60 * 1000)) / 1000);
-            countdownElement.textContent = 'Tunggu ' + days + ' hari ' + hours + ' jam ' + minutes + ' menit ' + (seconds < 10 ? '0' : '') + seconds + ' detik';
+            countdownElement.textContent = 'Tunggu selama ' + days + ' hari ' + hours + ' jam ' + minutes + ' menit ' + (seconds < 10 ? '0' : '') + seconds + ' detik';
         }
     }
 
     var countdownTimer = setInterval(updateCountdown, 1000);
 
     clickButton.addEventListener('click', function() {
-        myModal.show(); // Tampilkan modal Bootstrap saat tombol "Sini Masuk!!!" diklik
+        myModal.show(); 
     });
 
     submitPin.addEventListener('click', function() {
@@ -49,6 +42,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Panggil awal untuk memperbarui hitung mundur
     updateCountdown();
 });

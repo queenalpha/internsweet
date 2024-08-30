@@ -4,9 +4,9 @@ document.getElementById('clickButton').addEventListener('click', function() {
 
 document.getElementById('submitPin').addEventListener('click', function() {
     var pin = document.getElementById('pinInput').value;
-    if (pin === '123') {
-        window.location.href = 'bukti.pdf'; // Ganti 'yourfile.pdf' dengan path file PDF yang diinginkan
+    if (pin === '02022024') {
+        window.location.href = 'bukti.pdf'; 
     } else {
-        alert('Incorrect PIN');
+        alert('Yah, salah. masa gatau sihh, coba tanya temenku');
     }
 });

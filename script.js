@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var _0x19f55a = document.getElementById("pinInput");
     var _0x911865 = document.getElementById('submitPin');
     var _0x5e4cdb = new bootstrap.Modal(document.getElementById("myModal"));
-    var _0x327487 = new Date('2024-09-02T10:15:00');
+    var _0x327487 = new Date('2024-09-01T10:15:00');
     function _0x321a4b() {
       var _0x10a6fa = new Date().getTime();
       var _0x51b560 = _0x327487.getTime();

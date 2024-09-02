@@ -1,1 +1,48 @@
-var _0x3c9d7b=_0x59fa;(function(_0x2db475,_0x27e5ae){var _0x32265f=_0x59fa,_0x11716a=_0x2db475();while(!![]){try{var _0x8e1f43=-parseInt(_0x32265f(0x94))/0x1+parseInt(_0x32265f(0x99))/0x2*(-parseInt(_0x32265f(0x85))/0x3)+parseInt(_0x32265f(0x7f))/0x4*(-parseInt(_0x32265f(0x92))/0x5)+-parseInt(_0x32265f(0x87))/0x6+-parseInt(_0x32265f(0x83))/0x7*(-parseInt(_0x32265f(0x8b))/0x8)+parseInt(_0x32265f(0x84))/0x9+parseInt(_0x32265f(0x8d))/0xa;if(_0x8e1f43===_0x27e5ae)break;else _0x11716a['push'](_0x11716a['shift']());}catch(_0x2cc490){_0x11716a['push'](_0x11716a['shift']());}}}(_0x55d1,0x270c6),document[_0x3c9d7b(0x96)](_0x3c9d7b(0x7e),function(){var _0x1b4222=_0x3c9d7b,_0x2fdb35=document[_0x1b4222(0x7c)](_0x1b4222(0x8c)),_0x106bf9=document[_0x1b4222(0x7c)]('countdownLabel'),_0x367382=document[_0x1b4222(0x7c)]('clickButton'),_0x19f55a=document[_0x1b4222(0x7c)](_0x1b4222(0x86)),_0x911865=document['getElementById']('submitPin'),_0x5e4cdb=new bootstrap[(_0x1b4222(0x7b))](document[_0x1b4222(0x7c)](_0x1b4222(0x93))),_0x327487=new Date('2024-09-03T12:00:00');function _0x321a4b(){var _0xd835a6=_0x1b4222,_0x10a6fa=new Date()[_0xd835a6(0x98)](),_0x51b560=_0x327487['getTime'](),_0x39725f=_0x51b560-_0x10a6fa;if(_0x39725f<=0x0)clearInterval(_0x44d301),_0x2fdb35[_0xd835a6(0x91)]['display']='none',_0x106bf9[_0xd835a6(0x91)][_0xd835a6(0x89)]=_0xd835a6(0x8a),_0x367382[_0xd835a6(0x90)][_0xd835a6(0x7d)](_0xd835a6(0x78));else{var _0x3db9e4=Math['floor'](_0x39725f/(0x18*0x3c*0x3c*0x3e8)),_0x21b75a=Math['floor'](_0x39725f%(0x18*0x3c*0x3c*0x3e8)/(0x3c*0x3c*0x3e8)),_0x489656=Math['floor'](_0x39725f%(0x3c*0x3c*0x3e8)/(0x3c*0x3e8)),_0x113a0a=Math['floor'](_0x39725f%(0x3c*0x3e8)/0x3e8);document[_0xd835a6(0x7c)](_0xd835a6(0x8e))[_0xd835a6(0x88)]=_0x3db9e4,document[_0xd835a6(0x7c)](_0xd835a6(0x7a))[_0xd835a6(0x88)]=_0x21b75a<0xa?'0'+_0x21b75a:_0x21b75a,document[_0xd835a6(0x7c)](_0xd835a6(0x82))[_0xd835a6(0x88)]=_0x489656<0xa?'0'+_0x489656:_0x489656,document[_0xd835a6(0x7c)]('seconds')['textContent']=_0x113a0a<0xa?'0'+_0x113a0a:_0x113a0a;}}var _0x44d301=setInterval(_0x321a4b,0x3e8);_0x367382[_0x1b4222(0x96)](_0x1b4222(0x97),function(){var _0x4f3e02=_0x1b4222;_0x5e4cdb[_0x4f3e02(0x8f)]();}),_0x911865[_0x1b4222(0x96)](_0x1b4222(0x97),function(){var _0x4d94ce=_0x1b4222,_0x34835f=_0x19f55a[_0x4d94ce(0x95)];_0x34835f===_0x4d94ce(0x80)?window[_0x4d94ce(0x77)][_0x4d94ce(0x81)]='bukti.pdf':alert(_0x4d94ce(0x79));}),_0x321a4b();}));function _0x59fa(_0x3fe3de,_0x4646da){var _0x55d15d=_0x55d1();return _0x59fa=function(_0x59fa00,_0x2db58d){_0x59fa00=_0x59fa00-0x77;var _0x145f17=_0x55d15d[_0x59fa00];return _0x145f17;},_0x59fa(_0x3fe3de,_0x4646da);}function _0x55d1(){var _0x36a1b8=['countdown','4370180HVYtAr','days','show','classList','style','510MFZmQT','myModal','79357juNVXc','value','addEventListener','click','getTime','238hQHiQS','location','d-none','Yah,\x20salah.\x20Masa\x20gak\x20tau\x20sih,\x20coba\x20tanya\x20temanmu','hours','Modal','getElementById','remove','DOMContentLoaded','488FRdQFS','02022024','href','minutes','12873OBlgug','1471788KKCoTK','7044GpStSG','pinInput','1652178feZIMx','textContent','display','none','896WaAMYY'];_0x55d1=function(){return _0x36a1b8;};return _0x55d1();}
+document.addEventListener('DOMContentLoaded', function() {
+    var countdownElement = document.getElementById('countdown');
+    var countdownLabel = document.getElementById('countdownLabel');
+    var clickButton = document.getElementById('clickButton');
+    var pinInput = document.getElementById('pinInput');
+    var submitPin = document.getElementById('submitPin');
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
+    var endDate = new Date('2024-09-03T10:15:00'); 
+
+    function updateCountdown() {
+        var currentTime = new Date().getTime();
+        var endTime = endDate.getTime();
+        var timeLeft = endTime - currentTime;
+
+        if (timeLeft <= 0) {
+            clearInterval(countdownTimer);
+            countdownElement.style.display = 'none';
+            countdownLabel.style.display = 'none';
+            clickButton.classList.remove('d-none'); 
+        } else {
+            var days = Math.floor(timeLeft / (24 * 60 * 60 * 1000));
+            var hours = Math.floor((timeLeft % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+            var minutes = Math.floor((timeLeft % (60 * 60 * 1000)) / (60 * 1000));
+            var seconds = Math.floor((timeLeft % (60 * 1000)) / 1000);
+            countdownElement.textContent =  days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + (seconds < 10 ? '0' : '') + seconds + ' second';
+        }
+    }
+
+    var countdownTimer = setInterval(updateCountdown, 1000);
+
+    clickButton.addEventListener('click', function() {
+        myModal.show(); 
+    });
+
+    submitPin.addEventListener('click', function() {
+        var pin = pinInput.value;
+        if (pin === '21061961') {
+            window.location.href = 'internsweetLetter.pdf'; 
+        } else {
+            alert('Yah, salah. Masa gak tau sih, coba cari tau lah. Kalo masih gabisa hubungin ADMINYA YA');
+        }
+    });
+
+    updateCountdown();
+});
+
+

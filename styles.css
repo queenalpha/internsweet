@@ -1,56 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: rgb(0,17,36);   
-    background: linear-gradient(137deg, rgba(0,17,36,1) 0%, rgba(42,18,54,0.9192051820728291) 47%, rgba(11,31,40,1) 100%);
+body{
+    background-color: #EAE8E5 !important;
+    font-family: "Playfair Display", serif;
 }
 
-.container {
-    text-align: center;
+.bg-body{
+    background-color: #EAE8E5 !important;
+}
+/* .carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+} */
+
+.nav-item{
+    border-radius: 20px;
+    background-color: #101010;
+}
+.nav-item:hover{
+   background-color: #EAE8E5;
+   border-radius: 20px;
+   border: 2px solid #101010;
 }
 
-.new-amsterdam-regular {
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-  #countdown {
-    display: flex;
-    justify-content: center;
-    color: white;
+.nav-link{
+    color: #EAE8E5;
+}
+.nav-link:hover{
+    color: #101010;
 }
 
-.countdown-item {
-    margin: 0 5px;
-    text-align: center;
-}
-
-.countdown-item span {
-    display: block;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.countdown-item .label {
-    font-size: 30px;
-}
-
-footer {
-    border-top: 1px solid;
-    text-align: center;
-    padding: 20px;
-    color: white;
-    position: fixed;
-    width: 100%;
+footer{
     bottom: 0;
-    font-size: large;
-    font-weight: medium;
-    background: transparent;
 }
+
+.card {
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.card img {
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-title {
+    transform: scale(1.1);
+}
+
+.greeting{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Gallery/17.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    height: 90vh;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px; 
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    padding-bottom: 100%; 
+    background-color: #f0f0f0; 
+}
+
+.grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover img {
+    transform: scale(1.2); 
+}
+
+
+
+

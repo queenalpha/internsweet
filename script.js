@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var countdownElement = document.getElementById('timer');
     var mainContentElement = document.getElementById('mainContent');
     
-    var endDate = new Date('2024-09-09T03:20:00');
+    var endDate = new Date('2024-09-09T15:00:00');
 
     function updateCountdown() {
         var currentTime = new Date().getTime();
